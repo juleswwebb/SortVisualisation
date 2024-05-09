@@ -1,4 +1,5 @@
 def merge_sort(arr):
+    '''sorts array with merge sort (bottom up)'''
     sorted_lists = []
     subarray_width = 1
     arr_length = len(arr)
@@ -18,6 +19,7 @@ def merge_sort(arr):
     return sorted_lists
 
 def merge(arr, left, mid, right):
+    '''merges subarrays'''
     left_size = mid - left + 1
     right_size = right - mid
     left_arr = [0] * left_size
